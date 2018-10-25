@@ -134,13 +134,16 @@ function p2pinit(initmode) {
                     });
 	*/
 		
-	//var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
+	var peer = new Peer({　host:'justchesspeerjs.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
+	
+	/*
 	var peer = new Peer(null, {
                 secure: true, 
                 host: 'justchesspeerjs.herokuapp.com', 
                 port: 443,
 				key: 'lwjd5qra8257b9'
     });
+	*/
 	console.log("initmode :" +  initmode);	
 	console.log("peerid :" +  peerid);		
 	if(initmode == "reciever") {
@@ -306,6 +309,8 @@ var peer = null; // Own peer object
 var peerid = null;
 var conn = null;
 var connected  = 0;
+
+console.log("Launching version 1.1")
 main()
 
 
