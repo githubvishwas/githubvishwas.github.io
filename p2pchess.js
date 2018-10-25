@@ -85,7 +85,7 @@ var sendmove = function() {
 	if(p2pmode == "sender") {
 		otherp2pmode = "reciever"
 	}
-	var gameUrl = "http://justchess.herokuapp.com/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid +"&connected="+connected;
+	var gameUrl = "https://justchess.herokuapp.com/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid +"&connected="+connected;
 	//for debug
 	//gameUrl = "file:///D:/chess/githubvishwas.github.io/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid+"&connected="+connected;
 	
@@ -135,10 +135,11 @@ function p2pinit(initmode) {
 	*/
 		
 	//var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
-	var peer = new Peer('vishyjustchesspeerjsid', {
+	var peer = new Peer(null, {
                 secure: true, 
                 host: 'justchesspeerjs.herokuapp.com', 
                 port: 443,
+				key: 'lwjd5qra8257b9'
     });
 	console.log("initmode :" +  initmode);	
 	console.log("peerid :" +  peerid);		
