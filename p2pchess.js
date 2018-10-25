@@ -97,7 +97,8 @@ var sendmove = function() {
 	//window.open(sendlink)
 	
 	//for debug
-	window.open(gameUrl)
+	//window.open(gameUrl)
+	prompt("Copy and send the link below to play with your friend: ", gameUrl)
 }
 
 function getUrlVars() {
