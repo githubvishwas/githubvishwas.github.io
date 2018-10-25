@@ -85,7 +85,7 @@ var sendmove = function() {
 	if(p2pmode == "sender") {
 		otherp2pmode = "reciever"
 	}
-	var gameUrl = "http://githubvishwas.github.io/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid +"&connected="+connected;
+	var gameUrl = "http://justchess.herokuapp.com/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid +"&connected="+connected;
 	//for debug
 	//gameUrl = "file:///D:/chess/githubvishwas.github.io/p2pchess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target+"&p2pmode="+otherp2pmode+"&peerid=" +peerid+"&connected="+connected;
 	
