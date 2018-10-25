@@ -128,14 +128,14 @@ function getShortLink(url) {
 }
 function p2pinit(initmode) {
 	console.log("Initializing p2p");
-	/*
+	
 	peer = new Peer(null, {
 						host:'justchesspeerjs.herokuapp.com',
 						secure:true, 
 						port:443,
                         debug: 2
                     });
-	*/
+	
 		
 	//var peer = new Peer({　host:'justchesspeerjs.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
 	
@@ -193,6 +193,9 @@ function ready() {
 					});
 }
 function main() {
+
+	console.log("Launching version 1.1");
+	
 	startPos = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR_w_KQkq_-_0_1'
 	//var startPos = 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1'
 	//file:///D:/chess/githubvishwas.github.io/justplaychess.html?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR_w_KQkq_-_0_1&source=d2&target=d4
@@ -313,7 +316,7 @@ var peerid = null;
 var conn = null;
 var connected  = 0;
 
-console.log("Launching version 1.1")
+
 main()
 
 
