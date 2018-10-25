@@ -127,9 +127,13 @@ function getShortLink(url) {
 }
 function p2pinit(initmode) {
 	console.log("Initializing p2p");
+	/*
 	peer = new Peer(null, {
                         debug: 2
                     });
+	*/
+		
+	var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
 	console.log("initmode :" +  initmode);	
 	console.log("peerid :" +  peerid);		
 	if(initmode == "reciever") {
