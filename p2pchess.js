@@ -130,11 +130,14 @@ function p2pinit(initmode) {
 	console.log("Initializing p2p");
 	/*
 	peer = new Peer(null, {
+						host:'justchesspeerjs.herokuapp.com',
+						secure:true, 
+						port:443,
                         debug: 2
                     });
 	*/
 		
-	var peer = new Peer({　host:'justchesspeerjs.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
+	//var peer = new Peer({　host:'justchesspeerjs.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})	
 	
 	/*
 	var peer = new Peer(null, {
