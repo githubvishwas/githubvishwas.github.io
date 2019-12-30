@@ -75,7 +75,7 @@ var reset = function() {
 	window.open(window.location.href,"_self")
 }
 var sendmove = function() {
-	var gameUrl = "http://githubvishwas.github.io/justplaychess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target;
+	var gameUrl = "http://tryit.in/whatsappchess/index.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target;
 	//var gameUrl = "file:///D:/chess/githubvishwas.github.io/justplaychess.html?fen="+orgStartPos+"&source="+glb_source+"&target="+glb_target;
 	
 	var sendlink  = "https://wa.me/?text="+encodeURIComponent(gameUrl)
